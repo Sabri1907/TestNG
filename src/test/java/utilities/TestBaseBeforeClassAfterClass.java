@@ -9,11 +9,15 @@ import org.testng.annotations.BeforeClass;
 import java.time.Duration;
 
 public abstract class TestBaseBeforeClassAfterClass {
+     /*
+    NOT => @BeforeClass ve @AfterClass notasyonlarini TestNG'de kullanirken JUnit'deki gibi static
+    yapmaya gerek yoktur.
+     */
 
-    static protected WebDriver driver;
+    protected WebDriver driver;
 
     @BeforeClass
-    public static void setUp(){
+    public void setUp(){
         WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
         driver.manage().window().maximize();
@@ -21,7 +25,7 @@ public abstract class TestBaseBeforeClassAfterClass {
     }
 
     @AfterClass
-    public static void tearDown() throws InterruptedException {
+    public void tearDown() throws InterruptedException {
         Thread.sleep(3000);
         driver.quit();
     }

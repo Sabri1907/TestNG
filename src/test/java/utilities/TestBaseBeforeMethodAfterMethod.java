@@ -10,7 +10,7 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public abstract class TestBaseBeforeAfter {
+public abstract class TestBaseBeforeMethodAfterMethod {
 
     protected WebDriver driver;
     protected String tarih;
@@ -31,6 +31,6 @@ public abstract class TestBaseBeforeAfter {
     @AfterMethod
     public void tearDown() throws InterruptedException {
         Thread.sleep(3000);
-        // driver.quit();
+        //driver.quit();
     }
 }
