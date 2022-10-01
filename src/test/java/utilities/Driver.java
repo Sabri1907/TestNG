@@ -17,23 +17,40 @@ public class Driver {
 
      */
 
+    /*
+    => Testlerimizi calistirdigimizda her seferinde yeni driver olusturdugu icin her test methodu
+    icin yeni bir pencere (driver) aciyor. Eger driver'a bir deger atanmamissa yani driver==null ise
+    bir kez driver'i calistir diyerek bir kere if icini calistiracak. Ve driver artik bir kere
+    calistigi icin ve deger atandigi icin null olmayacak ve direk return edecek ve diger testlerimizi
+    ayni pencere (driver) uzerinde calisacak.
+     */
+
     static WebDriver driver;
 
     public static WebDriver getDriver(){
-        WebDriverManager.chromedriver().setup();
-        driver=new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        if (driver==null) {
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        }
         // => WebElement turunde method olusturdugumuz icin bizden bisey return etmemizi istedi.
         // Biz de driver'i return ettik.
         return driver;
     }
 
     public static void closeDriver(){
-        driver.close();
+        if (driver!=null) { // driver'a deger atanmissa
+            driver.close();
+            driver=null; // Kapandiktan sonraki acmalari garanti altina almak icin null yaptik.
+
+        }
     }
 
     public static void quitDriver(){
-        driver.quit();
+        if (driver!=null) {
+            driver.quit();
+            driver=null;
+        }
     }
 }

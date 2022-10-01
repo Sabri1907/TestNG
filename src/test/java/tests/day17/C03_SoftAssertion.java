@@ -13,7 +13,7 @@ public class C03_SoftAssertion extends TestBaseBeforeClassAfterClass {
 
     /*
     NOT: HardAssertion'da test'imiz fail oldugu satirdan sonraki kismi calistirmaz.
-    SoftAssertion baslangic ve bitis satirlari rasindaki tum assertion'lari yapip bitis olarak
+    SoftAssertion baslangic ve bitis satirlari arasindaki tum assertion'lari yapip bitis olarak
     belirtmemiz gerken assertAll() methoduyla test methodumuzdaki butun assertion'lari kontrol eder.
     Fail olan olursa assertion yaptigimiz methodun sonuna yazdigimiz mesaji bize konsolda verir.
 
