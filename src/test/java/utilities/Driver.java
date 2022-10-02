@@ -3,10 +3,14 @@ package utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
 
 public class Driver {
+
     private Driver(){
     // Farkli objelerle erisimi engellemek icin private constructor olusturarak default constructor'i
     // iptal ettik.
@@ -34,8 +38,37 @@ public class Driver {
 
     public static WebDriver getDriver(){
         if (driver==null) {
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+
+            switch(ConfigReader.getProperty("browser")){
+                // => Configuration.properties'de browser'a hangi value'yu atadiysak testlerimizi o browser'i
+                    // acarak yapar.
+
+                case "chrome" :
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+                    break;
+
+                case "edge" :
+                    WebDriverManager.edgedriver().setup();
+                    driver = new EdgeDriver();
+                    break;
+
+                case "firefox" :
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+
+                case "headless-chrome" :
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+                    // => Bu manager sayfa acmadan testlerimizi yapar
+                    break;
+
+                default:
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+            }
+
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         }

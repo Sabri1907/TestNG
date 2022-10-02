@@ -24,5 +24,8 @@ public class HotelMyCamp {
     public WebElement login2;
 
     @FindBy (xpath = "//*[@class='username username-hide-on-mobile']")
-    public WebElement managerProfile;
+    public WebElement girisYapildi;
+
+    @FindBy (xpath = "//*[text()='Username or password is incorrect, please correct them and try again']")
+    public WebElement girisYapilamadi;
 }
