@@ -22,7 +22,7 @@ public class C02_NegatifTest {
         hotelMyCamp.userName.sendKeys(ConfigReader.getProperty("hotelWrongUserName"));
 
         Actions actions =new Actions(Driver.getDriver());
-        actions.sendKeys(Keys.TAB).sendKeys(ConfigReader.getProperty("hotelWrongPassword")).sendKeys(Keys.ENTER).perform();
+        actions.sendKeys(Keys.TAB).sendKeys(ConfigReader.getProperty("hotelPassword")).sendKeys(Keys.ENTER).perform();
 
         // Degerler girildiginde sayfaya girilmedigini test edin
        Assert.assertTrue(hotelMyCamp.girisYapilamadi.isDisplayed());
