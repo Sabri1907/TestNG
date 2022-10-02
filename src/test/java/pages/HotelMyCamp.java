@@ -23,6 +23,6 @@ public class HotelMyCamp {
     @FindBy (xpath = "//*[@value='Log in']")
     public WebElement login2;
 
-    @FindBy (xpath = "//*[@class='caption-subject font-green-sharp bold uppercase']")
-    public WebElement listOfUsers;
+    @FindBy (xpath = "//*[@class='username username-hide-on-mobile']")
+    public WebElement managerProfile;
 }

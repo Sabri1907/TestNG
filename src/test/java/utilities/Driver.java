@@ -7,6 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class Driver {
+    private Driver(){
+    // Farkli objelerle erisimi engellemek icin private constructor olusturarak default constructor'i
+    // iptal ettik.
+    }
+
     /*
     => Butun class'lardan driver'i cagirip kullanabilmek icin oncelikle utilities package'i altinda Driver class'i
     olusturduk.
