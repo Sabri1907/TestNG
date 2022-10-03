@@ -14,6 +14,7 @@ public class C03_Priority extends TestBaseBeforeMethodAfterMethod {
     @Test (priority = 1)
     public void youtubeTest() {
         driver.get("https://www.youtube.com");
+        driver.close();
 
 
     }
@@ -21,15 +22,18 @@ public class C03_Priority extends TestBaseBeforeMethodAfterMethod {
     @Test (priority = 3)
     public void bestBuyTest() {
         driver.get("https://www.bestbuy.com");
+        driver.close();
     }
 
     @Test (priority = -2)
     public void amazonTest() {
         driver.get("https://www.amazon.com");
+        driver.close();
     }
 
     @Test // => Priority'i 0 olarak kabul eder.
-    public void hepsiBuradaTestTest() {
+    public void hepsiBuradaTest() {
         driver.get("https://www.hepsiburada.com");
+        driver.close();
     }
 }

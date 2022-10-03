@@ -1,0 +1,26 @@
+<!--
+    => XML, projemize isteklerimizi iletmek icin hazirladigimiz bir haberlesme dosyasi diyebiliriz.
+Bir xml dosyamiz sayesinde test class'imizi acmadan run tusuna basmadan istedigimiz test methodunu, istedigimiz class'i
+ve istedigimiz package'i calistirabilir.
+    => Package icinde hangi class'in veya hangi test methodunun calismasini hangisinin calismamasini belirtebiliriz.
+    => HTML kodlarindaki gibi tag'larin acilip kapanisina dikkat etmemiz gerekir.
+    => XML dosyamizi olustururken ilk once <!DOCTYPE komutu ile baslamamiz gerekiyor. Bunu TestNG sayfasindan da
+alabiliriz. Sonrasinda suite tag'i ile baslayip hangi testi calistiracaksak ona gore .xml formatini yazmamiz gerekir.
+-->
+
+<!--
+=> Oncelikle Suite tag'i olusturuyoruz ve "" icinde ismini yaziyoruz
+=> iki suite tag'i arasinda test tag'i olusturup "" icinde ismini yazariz ve tag'i kapatiriz
+=> iki test tag'i arasinda sirasiyla test / packages / classes / class / methods tag'larindan hangi(leri)ni kullacaksak
+   ilgili tag'lari acip kapatiriz.
+-->
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="istenen class'lari calistirma">
+   <test name="classlar">
+       <classes>
+           <class name="tests.day16.C03_Priority"/>
+           <class name="tests.day17.C03_SoftAssertion"/>
+       </classes>
+   </test>
+</suite>

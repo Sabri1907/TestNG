@@ -10,7 +10,8 @@ public class C02_BeforeClassAfterClass extends TestBaseBeforeClassAfterClass {
      */
 
     @Test
-    public void testamazon() {
+    public void testAmazon() {
+
         driver.get("https://www.amazon.com");
     }
 
