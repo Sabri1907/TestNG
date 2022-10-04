@@ -8,7 +8,7 @@ public class C01_BeforeMethodAfterMethod extends TestBaseBeforeMethodAfterMethod
     // => TestNG framework'unda Before/After notasyonlari yerine BeforeMethod/AfterMethod notasyonlari kullanilir.
     // => Calisma prensibi JUnit'deki Before/After ile aynidir.
 
-    @Test
+    @Test (groups = "grp1")
     public void amazonTesti() {
         driver.get("https://www.amazon.com");
 

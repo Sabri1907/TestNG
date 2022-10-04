@@ -23,4 +23,8 @@ public class FaceBookPage {
 
     @FindBy (xpath = "//*[@class='_9ay7']")
     public WebElement girisYapilamadiYazisi;
+
+    @FindBy (xpath = "//*[@class='_9ai6 img sp_vxiiSmFDFzJ sx_082a2e']")
+    public WebElement senMisinKutusu;
+
 }

@@ -24,11 +24,12 @@ public class C01_PageClassFaceBookTest {
         faceBookPage.sifreKutusu.sendKeys(faker.internet().password());
         faceBookPage.girisYapButonu.click();
 
+
         // Basarili giris yapilamadigini test edin
         Assert.assertTrue(faceBookPage.girisYapilamadiYazisi.isDisplayed());
 
         // Sayfayi kapatin
-        Driver.getDriver().close();
+        //Driver.getDriver().close();
 
     }
 }

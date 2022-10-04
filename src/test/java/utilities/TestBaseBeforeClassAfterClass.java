@@ -16,7 +16,7 @@ public abstract class TestBaseBeforeClassAfterClass {
 
     protected WebDriver driver;
 
-    @BeforeClass
+    @BeforeClass (groups = {"grp1","grp2"})
     public void setUp(){
         WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
@@ -24,7 +24,7 @@ public abstract class TestBaseBeforeClassAfterClass {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
 
-    @AfterClass
+    @AfterClass (groups = {"grp1","grp2"})
     public void tearDown() throws InterruptedException {
         Thread.sleep(3000);
         driver.quit();

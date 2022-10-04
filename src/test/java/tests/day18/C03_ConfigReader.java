@@ -9,7 +9,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 public class C03_ConfigReader {
-    @Test
+    @Test (groups = "grp2")
     public void test01() {
 
         // https://www.hotelmycamp.com adresine gidin ve login butonuna basin
@@ -38,7 +38,7 @@ public class C03_ConfigReader {
         Assert.assertTrue(hotelMyCamp.girisYapildi.isDisplayed());
 
         // Sayfayi kapatin
-        Driver.getDriver().close();
+        //Driver.getDriver().close();
 
     }
 }

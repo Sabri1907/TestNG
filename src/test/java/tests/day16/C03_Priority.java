@@ -19,7 +19,7 @@ public class C03_Priority extends TestBaseBeforeMethodAfterMethod {
 
     }
 
-    @Test (priority = 3)
+    @Test (priority = 3, groups = "grp1")
     public void bestBuyTest() {
         driver.get("https://www.bestbuy.com");
         driver.close();
