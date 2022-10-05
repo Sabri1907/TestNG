@@ -8,7 +8,7 @@ ve son olarak grupladigimiz methodlara hangi package altinda oldugunu belirtmemi
 
 NOT=> Dikkat etmemiz gereken konu gruplara dahil ettigimiz test'lerin extends oldugu class'lardaki
 ilgili testleri de gruba eklememiz gerekir.
-=> Ayrica test;leri gruplarken depends on ile baska test'e bagli olup olmadigini kontrol etmemiz gerekir.
+=> Ayrica test'leri gruplarken depends on ile baska test'e bagli olup olmadigini kontrol etmemiz gerekir.
 -->
 
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
