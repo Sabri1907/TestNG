@@ -46,7 +46,7 @@ public class C01_RaporluTest extends TestBaseRapor {
             => Hata aldigimiz sayfanin ekran goruntusunu gormek icin:
                 -> Rapora sag tik yapip open in explorer'i tiklariz
                    -> Acilan sayfadan raporu cift tikla acariz.
-                     -> Ve raporun altinda kucuk simge seklinde hata linan sayfa goruntulenir.
+                     -> Ve raporun altinda kucuk simge seklinde hata alinan sayfa goruntulenir.
                        -> Simge'ye cift tik yaptigimizda goruntu buyur.
          */
 

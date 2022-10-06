@@ -31,5 +31,8 @@ public class C02_HardAssertion extends TestBaseCross {
 
         // Arama sonucunun "Nutella" icerdigini test
         Assert.assertTrue(sonuc.getText().contains("Nutella"));
+
+        // Sayfayi kapatin
+        driver.quit();
     }
 }

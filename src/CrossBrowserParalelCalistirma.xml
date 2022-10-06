@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Cross Browser Class Calistirma" parallel="tests" thread-count="2">
+    <test name="Cross Browser Chrome Ile Calistirma">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.day22.C02_HardAssertion"/>
+        </classes>
+    </test>
+    <test name="Cross Browser Edge Ile Calistirma">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.day22.C03_SoftAssertion"/>
+        </classes>
+    </test>
+</suite>
+
+<!--
+  PARALEL CALISTIRMA: Ayni anda birden fazla browser'i kullanarak test yapma islemidir.
+    Paralel calistirmak icin suite tag'i icinde parallel paramteresi kullanip "" icinde tests yaziyoruz.
+ Devaminda kac tane test yapacaksak thread-count parametresi kullanip "" cift tirnak icinde belirtiriz.
+-->
