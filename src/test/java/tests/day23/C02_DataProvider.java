@@ -28,7 +28,6 @@ public class C02_DataProvider {
 
         //Data provider ile 3 farklı userEmail ve 3 farklı password girelim
         //login butonuna tiklayin
-
         blueRent.blueRentUser.sendKeys(userEmail);
         Actions actions = new Actions(Driver.getDriver());
         actions.sendKeys(Keys.TAB).sendKeys(password)
