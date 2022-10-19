@@ -29,8 +29,8 @@ public class HomeWork {
 
         //1.Dizustu Bilgisayar
         ilkIkiIslem();
-        action.moveToElement(hepsiBurada.dizUstuBilgisayar).click().perform();
-        Assert.assertTrue(hepsiBurada.dizUstuBilgisayarGiris.isDisplayed());
+        action.moveToElement(hepsiBurada.dizustu).click().perform();
+        Assert.assertTrue(hepsiBurada.dizUstuGiris.isDisplayed());
         ReusableMethods.getScreenshot("Dizustu Bilgisayar");
         System.out.println(Driver.getDriver().getCurrentUrl());
         Driver.getDriver().navigate().back();
@@ -49,8 +49,8 @@ public class HomeWork {
         //3.Masaustu Bilgisayar
         Thread.sleep(2000);
         ilkIkiIslem();
-        action.moveToElement(hepsiBurada.masaustuBilgisayar).click().perform();
-        Assert.assertTrue(hepsiBurada.masaUstuBilgisayarGiris.isDisplayed());
+        action.moveToElement(hepsiBurada.masaustu).click().perform();
+        Assert.assertTrue(hepsiBurada.masaUstuGiris.isDisplayed());
         //Thread.sleep(2000);
         ReusableMethods.getScreenshot("Masaustu Bilgisayar");
         System.out.println(Driver.getDriver().getCurrentUrl());
@@ -59,8 +59,8 @@ public class HomeWork {
         //4.Oyuncu Ozel
         Thread.sleep(2000);
         ilkIkiIslem();
-        action.moveToElement(hepsiBurada.oyuncuOzel).click().perform();
-        Assert.assertTrue(hepsiBurada.oyuncuOzelGiris.isDisplayed());
+        action.moveToElement(hepsiBurada.oyuncu).click().perform();
+        Assert.assertTrue(hepsiBurada.oyuncuGiris.isDisplayed());
         //Thread.sleep(2000);
         ReusableMethods.getScreenshot("Oyuncu Ozel");
         System.out.println(Driver.getDriver().getCurrentUrl());
@@ -69,8 +69,8 @@ public class HomeWork {
         //5 .Veri Depolama
         Thread.sleep(2000);
         ilkIkiIslem();
-        action.moveToElement(hepsiBurada.veriDepolama).click().perform();
-        Assert.assertTrue(hepsiBurada.veriDepolamaGiris.isDisplayed());
+        action.moveToElement(hepsiBurada.veri).click().perform();
+        Assert.assertTrue(hepsiBurada.veriGiris.isDisplayed());
         ReusableMethods.getScreenshot("Veri Depolama");
         System.out.println(Driver.getDriver().getCurrentUrl());
         Driver.getDriver().navigate().back();
@@ -88,8 +88,8 @@ public class HomeWork {
         //7. Bilgisayar Bilesenleri
         Thread.sleep(2000);
         ilkIkiIslem();
-        action.moveToElement(hepsiBurada.bilgisayarBilesenleri).click().perform();
-        Assert.assertTrue(hepsiBurada.bilgisayarBilesenleriGiris.isDisplayed());
+        action.moveToElement(hepsiBurada.bilesenler).click().perform();
+        Assert.assertTrue(hepsiBurada.bilesenlerGiris.isDisplayed());
         //Thread.sleep(2000);
         ReusableMethods.getScreenshot("Bilgisayar Bilesenleri");
         System.out.println(Driver.getDriver().getCurrentUrl());
@@ -98,8 +98,8 @@ public class HomeWork {
         //8. Yurt Disindan
         Thread.sleep(2000);
         ilkIkiIslem();
-        action.moveToElement(hepsiBurada.yurtDisindan).click().perform();
-        Assert.assertTrue(hepsiBurada.yurtDisindanGiris.isDisplayed());
+        action.moveToElement(hepsiBurada.yurt).click().perform();
+        Assert.assertTrue(hepsiBurada.yurtGiris.isDisplayed());
         // Thread.sleep(2000);
         ReusableMethods.getScreenshot("Yurt Disindan");
         System.out.println(Driver.getDriver().getCurrentUrl());
@@ -108,8 +108,8 @@ public class HomeWork {
         //9. Ag-Modem-Akilli Ev
         Thread.sleep(2000);
         ilkIkiIslem();
-        action.moveToElement(hepsiBurada.agModem).click().perform();
-        Assert.assertTrue(hepsiBurada.agModemGiris.isDisplayed());
+        action.moveToElement(hepsiBurada.modem).click().perform();
+        Assert.assertTrue(hepsiBurada.modemGiris.isDisplayed());
         //Thread.sleep(2000);
         ReusableMethods.getScreenshot("Ag Modem Akilli Ev");
         System.out.println(Driver.getDriver().getCurrentUrl());
@@ -118,8 +118,8 @@ public class HomeWork {
         //10. Grafik Tablet
         Thread.sleep(2000);
         ilkIkiIslem();
-        action.moveToElement(hepsiBurada.grafikTablet).click().perform();
-        Assert.assertTrue(hepsiBurada.grafikTabletGiris.isDisplayed());
+        action.moveToElement(hepsiBurada.grafik).click().perform();
+        Assert.assertTrue(hepsiBurada.grafikGiris.isDisplayed());
         //Thread.sleep(2000);
         ReusableMethods.getScreenshot("Grafik Tablet");
         System.out.println(Driver.getDriver().getCurrentUrl());
@@ -128,8 +128,8 @@ public class HomeWork {
         //11. Cevre Birimleri
         Thread.sleep(2000);
         ilkIkiIslem();
-        action.moveToElement(hepsiBurada.cevreBirimleri).click().perform();
-        Assert.assertTrue(hepsiBurada.cevreBirimleriGiris.isDisplayed());
+        action.moveToElement(hepsiBurada.cevre).click().perform();
+        Assert.assertTrue(hepsiBurada.cevreGiris.isDisplayed());
         //Thread.sleep(2000);
         ReusableMethods.getScreenshot("Cevre Birimleri");
         System.out.println(Driver.getDriver().getCurrentUrl());
@@ -138,8 +138,8 @@ public class HomeWork {
         //12. Yazilim Urunleri
         Thread.sleep(2000);
         ilkIkiIslem();
-        action.moveToElement(hepsiBurada.yazilimUrunleri).click().perform();
-        Assert.assertTrue(hepsiBurada.yazilimUrunleriGiris.isDisplayed());
+        action.moveToElement(hepsiBurada.yazilim).click().perform();
+        Assert.assertTrue(hepsiBurada.yazilimGiris.isDisplayed());
         //Thread.sleep(2000);
         ReusableMethods.getScreenshot("Yazilim Urunleri");
         System.out.println(Driver.getDriver().getCurrentUrl());
@@ -148,8 +148,8 @@ public class HomeWork {
         //13. Aksesuarlar
         Thread.sleep(2000);
         ilkIkiIslem();
-        action.moveToElement(hepsiBurada.aksesuar).click().perform();
-        Assert.assertTrue(hepsiBurada.aksesuarGiris.isDisplayed());
+        action.moveToElement(hepsiBurada.aksesuarlar).click().perform();
+        Assert.assertTrue(hepsiBurada.aksesuarlarGiris.isDisplayed());
         //Thread.sleep(2000);
         ReusableMethods.getScreenshot("Aksesuarlar");
         System.out.println(Driver.getDriver().getCurrentUrl());
@@ -166,18 +166,10 @@ public class HomeWork {
         Driver.getDriver().navigate().back();
 
 
-
-        //List<WebElement> hepsiBuradaList = new ArrayList<>();
-        //hepsiBuradaList.add(0,hepsiBurada.dizUstuBilgisayar);
-
-
-
         // Sayfayi kapatin
         Driver.closeDriver();
 
     }
-
-
 
     private void ilkIkiIslem() {
         action.moveToElement(hepsiBurada.elektronik).perform();
